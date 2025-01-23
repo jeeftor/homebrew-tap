@@ -5,4 +5,5 @@ This repository contains the Homebrew formula for the License Manager tool. To i
 ```bash
 brew tap jeeftor/tap
 brew install license-manager
+brew install audiobook-organizer
 ```
