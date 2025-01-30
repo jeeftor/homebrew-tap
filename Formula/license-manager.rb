@@ -5,21 +5,21 @@
 class LicenseManager < Formula
   desc "License Manager Tool"
   homepage "https://github.com/jeeftor/license-manager"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jeeftor/license-manager/releases/download/v0.3.0/license-manager_Darwin_x86_64.tar.gz"
-      sha256 "3a69a60d81072741731e1ff4d1b61e1e1ee8a1ceafa833c54211c28910be7907"
+      url "https://github.com/jeeftor/license-manager/releases/download/v0.3.1/license-manager_Darwin_x86_64.tar.gz"
+      sha256 "3855f8756b00b70827438be65a336c61636af26ac7bdb199adb604bd1d5aca1a"
 
       def install
         bin.install "license-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jeeftor/license-manager/releases/download/v0.3.0/license-manager_Darwin_arm64.tar.gz"
-      sha256 "aea2a702cceba2e34b58806a6c3c38346fd756ce736eee9ca4c73f373a656000"
+      url "https://github.com/jeeftor/license-manager/releases/download/v0.3.1/license-manager_Darwin_arm64.tar.gz"
+      sha256 "b4c4f6d253e4e886254ef5644e9d064bd9c4a95d37bf40aebc41d8e75c51497d"
 
       def install
         bin.install "license-manager"
@@ -30,8 +30,8 @@ class LicenseManager < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jeeftor/license-manager/releases/download/v0.3.0/license-manager_Linux_x86_64.tar.gz"
-        sha256 "4367e4d5b763a855b59e32b7a776ec2fc0217ba657ee992c203affa3f0ab1c28"
+        url "https://github.com/jeeftor/license-manager/releases/download/v0.3.1/license-manager_Linux_x86_64.tar.gz"
+        sha256 "12d6e1cac352272de16870ff6d4a031d7f71fd51375943d0cb1ee3e00d893353"
 
         def install
           bin.install "license-manager"
@@ -40,8 +40,8 @@ class LicenseManager < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jeeftor/license-manager/releases/download/v0.3.0/license-manager_Linux_arm64.tar.gz"
-        sha256 "3ad5a05e21652aed423ca530244f324a076ab853607157897a9985c7a3ab471a"
+        url "https://github.com/jeeftor/license-manager/releases/download/v0.3.1/license-manager_Linux_arm64.tar.gz"
+        sha256 "047dc3ce27a04653e971855ed6c8682c11fa2e633938a059171364c53f48eb92"
 
         def install
           bin.install "license-manager"
