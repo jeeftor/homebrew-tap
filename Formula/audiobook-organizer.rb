@@ -5,21 +5,21 @@
 class AudiobookOrganizer < Formula
   desc "License Manager Tool"
   homepage "https://github.com/jeeftor/license-manager"
-  version "0.9.4"
+  version "0.9.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.4/audiobook-organizer_Darwin_x86_64.tar.gz"
-      sha256 "ff5bf44dc0e95e7e3de90ba983e654d5afcb6e758f1b87f9b9bf9865345743ab"
+      url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.5/audiobook-organizer_Darwin_x86_64.tar.gz"
+      sha256 "b8338796b6c454218a24bafca221da320560d4d8143197ed8650f9aa2f2b0d3b"
 
       def install
         bin.install "audiobook-organizer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.4/audiobook-organizer_Darwin_arm64.tar.gz"
-      sha256 "a1704d0572286803e88875cb27834e9c1257f99db144d12f2172c60d92194567"
+      url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.5/audiobook-organizer_Darwin_arm64.tar.gz"
+      sha256 "9d50ec5d5d35b955d52fc2d4bf9af44ed04927ae3b28a52c1a4c6fdc656f3cd3"
 
       def install
         bin.install "audiobook-organizer"
@@ -30,8 +30,8 @@ class AudiobookOrganizer < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.4/audiobook-organizer_Linux_x86_64.tar.gz"
-        sha256 "eca33648870faef3b3389bdafff5aa7fc103beabef7bb2e0c907a62d1169dd1e"
+        url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.5/audiobook-organizer_Linux_x86_64.tar.gz"
+        sha256 "9d1085dbfa741e88521634a3fc9604804bb031b8d663652f07bd642e19189c8c"
 
         def install
           bin.install "audiobook-organizer"
@@ -40,8 +40,8 @@ class AudiobookOrganizer < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.4/audiobook-organizer_Linux_arm64.tar.gz"
-        sha256 "a9807f466052fe91be05462599841e05138c5e9f922db7f4f1ccfc1675edb061"
+        url "https://github.com/jeeftor/audiobook-organizer/releases/download/v0.9.5/audiobook-organizer_Linux_arm64.tar.gz"
+        sha256 "f8a6eb37b816776d392a469e8ca61ae7793e06318ddb41dcfb0e293e83cbecdc"
 
         def install
           bin.install "audiobook-organizer"
